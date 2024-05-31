@@ -1,0 +1,101 @@
+*{
+    color:white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #252A34;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+header{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.turnos{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.turnos h3{
+    margin-bottom: 10px;
+}
+
+#turnoJugador{
+    font-weight: bold;
+    color: #FF2E63;
+    
+}
+
+.tablero{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.celdas{
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    cursor: pointer;
+    border: 2px solid #000;
+    transition: background 0.3s;
+}
+
+.celdas:hover{
+    background-color: green;
+}
+
+.resultado{
+    font-size: 2em;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#resultado.show {
+    opacity: 1;
+    animation: WINNER 2s ease-in-out;
+}
+
+@keyframes WINNER {
+    0% { transform: scale(1); color: #3375FF; }
+    50% { transform: scale(1.5); color: #3375FF; }
+    100% { transform: scale(1); color: #3375FF; }
+}
+
+#juego-nuevo{
+    margin-top: 20px;
+    background-color: #FF2E63;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: padding 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#juego-nuevo:hover{
+    background-color: #08D9D6;
+    color: #000;
+}
