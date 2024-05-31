@@ -72,15 +72,15 @@ header{
     transition: opacity 0.5s ease-in-out;
 }
 
-#resultado.show {
+.resultado.show {
     opacity: 1;
     animation: WINNER 2s ease-in-out;
 }
 
 @keyframes WINNER {
-    0% { transform: scale(1); color: #3375FF; }
-    50% { transform: scale(1.5); color: #3375FF; }
-    100% { transform: scale(1); color: #3375FF; }
+    0% { transform: scale(1); color: white; }
+    50% { transform: scale(1.5); color: #C70039; }
+    100% { transform: scale(1); color: white; }
 }
 
 #juego-nuevo{
