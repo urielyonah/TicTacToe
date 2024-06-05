@@ -68,11 +68,11 @@ function juegoNuevo() {
     }
     let elementResultado = document.querySelector('.resultado');
     elementResultado.innerHTML = "";
-    elementResultado.classList.remove('show'); // Remove the show class when resetting
+    elementResultado.classList.remove('show'); 
     Jugador1 = true;
-    GameOver = false; // Reset the game over flag
-    Turno.innerHTML = 'X'; // Reset the player turn display
-    document.getElementById('juego-nuevo').style.display = 'none'; // Hide the play again button
+    GameOver = false; 
+    Turno.innerHTML = 'X'; 
+    document.getElementById('juego-nuevo').style.display = 'none'; 
 }
 
 document.getElementById('juego-nuevo').addEventListener('click', juegoNuevo);
